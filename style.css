@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+main{
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 4.5rem 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 1rem 0rem hsla(216, 22%, 67%, 0.459);
+    width: 311px;
+}
+/*--------------------------------- grid 1----------*/
+.grid-info{
+    padding: 1.75rem 1.5rem;
+}
+.title-info{
+    font-size: 19.5px;
+    color: hsl(179, 62%, 43%);
+}
+.subtitle-info{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: hsl(71, 73%, 54%);
+    line-height: 1.3rem;
+}
+.desc-info{
+    font-size: 13.5px;
+    margin-top: 1rem;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6rem;
+}
+/*--------------------------------- grid 2----------*/
+.grid-value{
+    padding: 1.75rem 1.5rem;
+    background-color: hsl(179, 62%, 43%);
+}
+.info-value{
+    font-size: 17.5px;
+    color: hsl(0, 0%, 100%);
+}
+.value{
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.value span{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 0.6rem;
+}
+.desc-value{
+    color: hsl(0, 0%, 100%);
+    margin-top: 0.5rem;
+}
+#btn-value{
+    margin-top: 1.8rem;
+    width: 100%;
+    height: 48px;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+/*--------------------------------- grid 3----------*/
+.grid-desc{
+    padding: 1.75rem 1.5rem;
+    background-color: hsla(179, 62%, 43%, 0.781);
+}
+.title-desc{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+}
+.info-desc{
+    font-size: 13.5px;
+    color: hsl(0, 0%, 100%);
+    
+    line-height: 1.3rem;
+    white-space: pre-line;
+}
+
+@media screen  and (min-width: 1440px){
+    main{
+        margin: 5.5rem 22rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'a a''b c';
+        width: 657px;
+        
+    }
+/*--------------------------------- grid 1----------*/
+
+    .grid-info{
+        grid-area: a;
+        padding: 2.5rem;
+    }
+    .title-info{
+        font-size: 24px;
+    }
+    .subtitle-info{
+        font-size: 18px;
+    }
+    .desc-info{
+        font-size: 16px;
+    }
+/*--------------------------------- grid 2----------*/
+
+    .grid-value{
+        grid-area: b;
+        padding: 2.5rem;
+
+    }
+    .desc-value{
+        font-size: 15px;
+    }
+    #btn-value{
+        cursor: pointer;
+    }
+/*--------------------------------- grid 3----------*/
+
+    .grid-desc{
+        grid-area: c;
+        padding: 2.5rem;
+
+    }
+}
